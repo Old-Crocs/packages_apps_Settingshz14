@@ -21,6 +21,15 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
+    <!-- Android version -->
+    <Preference
+        android:key="os_firmware_version"
+        android:title="@string/firmware_version"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:searchable="false"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
+
     <!-- HorizonDroid version -->
     <Preference
         android:key="horizon_release_version"
@@ -30,14 +39,13 @@
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.HorizonVersionDetailPreferenceController"/>
 
-    <!-- Android version -->
+    <!-- HorizonDroid maintainer -->
     <Preference
-        android:key="os_firmware_version"
-        android:title="@string/firmware_version"
+        android:key="maintainer"
+        android:title="@string/maintainer"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
-        settings:searchable="false"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.HorizonDroidMaintainerPreferenceController"/>
 
     <!-- Horizon version -->
     <Preference
@@ -65,6 +73,7 @@
     -->
 
     <!-- Baseband -->
+    <!--
     <Preference
         android:key="base_band"
         android:title="@string/baseband_version"
@@ -72,6 +81,7 @@
         android:selectable="false"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController"/>
+    -->
 
     <!-- Build date -->
     <Preference 
