@@ -82,5 +82,11 @@
 
     <!-- Connected displays -->
     <color name="display_topology_background_color">@color/settingslib_color_charcoal</color>
+
+    <!-- Monet color pallete -->
+     <color name="primary_monet">@android:color/system_accent1_100</color>
+     <color name="sec_monet">@android:color/system_accent3_300</color>
+     <color name="opt_monet">@android:color/system_accent1_200</color>
+
 </resources>
 
